@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 50
+#define MAX 50        
 int parent[MAX];
 int rank[MAX];
 
