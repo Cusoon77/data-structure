@@ -10,10 +10,13 @@ void enqueue() {
     printf("Enter the data: ");
     scanf("%d", &val);
 
-    if (rear == -1 && front == -1) { // Empty queue
+    if (rear == -1 && front == -1) 
+    { 
         rear = front = 0;
         queue[rear] = val;
-    } else if ((rear + 1) % N == front) { // Queue full
+    }
+    else if ((rear + 1) % N == front) 
+    {
         printf("Queue is overflow\n");
         return;
     } else {
@@ -23,10 +26,13 @@ void enqueue() {
 }
 
 void dequeue() {
-    if (rear == -1 && front == -1) { // Empty queue
+    if (rear == -1 && front == -1) 
+    { 
         printf("Queue is underflow\n");
         return;
-    } else if (rear == front) { // Only one element
+    }
+    else if (rear == front) 
+    { 
         printf("Deleted item is %d\n", queue[front]);
         rear = front = -1;
     } else {
